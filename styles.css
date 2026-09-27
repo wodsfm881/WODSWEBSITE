@@ -9,3 +9,9 @@
 /* Main logo in Our Station section */
 .station-logo-mark{background:#fff;padding:24px}
 .station-logo-mark img{display:block;width:100%;height:100%;object-fit:contain}
+
+/* WODS-LP service attribution */
+.service-block{display:flex;flex-direction:column;align-items:center;text-align:center;padding:42px 0 30px;border-bottom:1px solid #2b2c30}
+.service-block>strong{font-family:Oswald,sans-serif;font-size:32px;letter-spacing:.08em}
+.service-block>span{font-size:11px;font-weight:900;letter-spacing:.2em;color:#aaa;margin:7px 0 16px}
+.service-block img{display:block;width:min(500px,90%);height:auto}
