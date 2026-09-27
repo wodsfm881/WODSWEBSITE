@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="t d">
+<title id="t">WODS FM 88.1</title><desc id="d">WODS FM 88.1 Music News Community logo</desc>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#078cff"/><stop offset="1" stop-color="#0068ce"/></linearGradient><linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ff2a22"/><stop offset="1" stop-color="#f20707"/></linearGradient></defs>
+<circle cx="380" cy="145" r="137" fill="url(#sky)" stroke="#050505" stroke-width="8"/>
+<path d="M337 62l25-17 25 8 17-9 20 8 14-6 18 14-8 16 21 10 7 18-13 12 4 17-17 8-8 21-23 5-14 20-24-7-14-21-20-8 7-19-13-13 13-14-6-17 16-9z" fill="#09d34c" stroke="#050505" stroke-width="6"/>
+<path d="M331 49l-40-14-38 8-37-11-37 15-26-7 19-19 47-11 40 8 35-8 48 13z" fill="#09d34c" stroke="#050505" stroke-width="6"/>
+<path d="M405 112l4 13 14 1-11 9 4 14-11-8-12 8 5-14-11-9 14-1z" fill="#ffe21b" stroke="#111" stroke-width="3"/>
+<text x="380" y="275" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="126" font-weight="900" font-stretch="condensed" fill="url(#red)" stroke="#050505" stroke-width="10" paint-order="stroke">WODS FM</text>
+<text x="380" y="365" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="104" font-weight="900" fill="#050505">88.1</text>
+<text x="380" y="414" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="31" font-weight="900" fill="#050505">MUSIC <tspan fill="#f20d0d">●</tspan> NEWS <tspan fill="#f20d0d">●</tspan> COMMUNITY</text>
+</svg>
