@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#b3131b">
+  <meta name="description" content="WODS FM 88.1 — Music, News & Community for Big Rapids, Michigan.">
+  <title>WODS FM 88.1 | Big Rapids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar"><div class="wrap topbar-inner"><span>BIG RAPIDS, MICHIGAN</span><span class="top-tag">MUSIC <b>•</b> NEWS <b>•</b> COMMUNITY</span></div></div>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="WODS FM 88.1 home">
+        <span class="brand-call">WODS</span><span class="brand-freq">88.1</span>
+      </a>
+      <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#listen">Listen Live</a><a href="#shows">Shows</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="listen-small" href="#listen">▶ Listen Live</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="wrap hero-content">
+        <p class="eyebrow">WODS FM 88.1 • BIG RAPIDS</p>
+        <h1>The Sound of<br><span>Our Community.</span></h1>
+        <p class="hero-copy">Great music, local information, and a station built for Big Rapids and West Michigan.</p>
+        <div class="hero-actions"><a class="btn primary" href="#listen">▶ Listen Live</a><a class="btn ghost" href="#shows">Explore WODS</a></div>
+      </div>
+      <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="onair" id="listen">
+      <div class="wrap onair-grid">
+        <div><p class="section-kicker">ON THE AIR</p><h2>WODS <span>88.1</span></h2><p>Your home for music, news, and community in Big Rapids.</p></div>
+        <div class="player-card">
+          <div class="player-status"><span class="live-dot"></span><span>LIVE • WODS FM</span></div>
+          <div class="player-row"><button id="playButton" class="play" aria-label="Play WODS">▶</button><div><strong>Listen Live</strong><small id="playerMessage">Stream connection coming soon</small></div></div>
+          <div class="meter"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <audio id="stationAudio" preload="none"></audio>
+        </div>
+      </div>
+    </section>
+
+    <section class="programming" id="shows">
+      <div class="wrap">
+        <p class="section-kicker red">WHAT YOU'LL HEAR</p><h2 class="section-title">More than a frequency.<br><span>A local connection.</span></h2>
+        <div class="cards">
+          <article><div class="card-num">01</div><h3>Music</h3><p>Familiar favorites and great songs made for listening all day long.</p><span>GREAT MUSIC →</span></article>
+          <article><div class="card-num">02</div><h3>News</h3><p>Information that keeps Big Rapids connected to what's happening around us.</p><span>STAY INFORMED →</span></article>
+          <article><div class="card-num">03</div><h3>Community</h3><p>Local voices, events, organizations, and the people who make our area home.</p><span>BIG RAPIDS →</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="big-mark"><span>WODS</span><b>88.1</b></div>
+        <div><p class="section-kicker">OUR STATION</p><h2>Radio for<br>Big Rapids.</h2><p>WODS FM 88.1 is focused on serving Big Rapids with a mix of music, news, and community connection. Turn us on at 88.1 FM and make WODS part of your day.</p><div class="facts"><div><b>88.1</b><span>FM</span></div><div><b>BIG RAPIDS</b><span>MICHIGAN</span></div><div><b>LOCAL</b><span>COMMUNITY</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-inner"><div><p class="section-kicker red">GET IN TOUCH</p><h2>Connect with WODS.</h2><p>Have community news, an event, or something you'd like WODS to know about?</p></div><a class="btn primary" href="mailto:">Contact the Station</a></div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><div class="footer-brand"><strong>WODS</strong><b>88.1</b></div><p>MUSIC • NEWS • COMMUNITY<br><span>Big Rapids, Michigan</span></p><p class="copyright">© <span id="year"></span> WODS FM 88.1</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
