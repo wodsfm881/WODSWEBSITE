@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#087ee5">
+  <meta name="description" content="Contact WODS FM 88.1 in Big Rapids, Michigan.">
+  <title>Contact WODS FM 88.1 | Big Rapids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="topbar"><div class="wrap topbar-inner"><span>BIG RAPIDS, MICHIGAN</span><span class="top-tag">MUSIC <b>•</b> NEWS <b>•</b> COMMUNITY</span></div></div>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="WODS FM 88.1 home"><img class="brand-logo" src="assets/wods-logo.svg" alt="WODS FM 88.1"></a>
+    <a class="contact-home" href="index.html">← Back to WODS</a>
+  </div>
+</header>
+<main class="contact-page">
+  <section class="contact-hero">
+    <div class="wrap">
+      <p class="section-kicker">WODS FM 88.1 • BIG RAPIDS</p>
+      <h1>Contact the Station</h1>
+      <p>Questions, concerns, or something you'd like WODS to know about? Send us a message.</p>
+    </div>
+  </section>
+  <section class="contact-form-section">
+    <div class="wrap">
+      <form id="stationContactForm" class="station-contact-form">
+        <div class="form-field"><label for="name">NAME*</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+        <div class="form-field"><label for="email">EMAIL*</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        <div class="form-field"><label for="phone">PHONE NUMBER</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="form-field"><label for="dob">DATE OF BIRTH</label><input id="dob" name="dob" type="date" autocomplete="bday"></div>
+        <div class="form-field full"><label for="message">QUESTIONS/CONCERNS</label><textarea id="message" name="message" rows="8"></textarea></div>
+        <div class="form-field full"><button class="btn primary contact-submit" type="submit">Send to WODS</button><p class="form-note">* Required field</p></div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><p class="copyright">© 2026 Big Rapids Wireless LLC</p></div></footer>
+<script>
+document.getElementById('stationContactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  if (!this.reportValidity()) return;
+  const data = new FormData(this);
+  const body = [
+    'NAME: ' + data.get('name'),
+    'EMAIL: ' + data.get('email'),
+    'PHONE NUMBER: ' + (data.get('phone') || ''),
+    'DATE OF BIRTH: ' + (data.get('dob') || ''),
+    '',
+    'QUESTIONS/CONCERNS:',
+    data.get('message') || ''
+  ].join('\n');
+  window.location.href = 'mailto:wods881@gmail.com?subject=' + encodeURIComponent('WODS Website Contact - ' + data.get('name')) + '&body=' + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
