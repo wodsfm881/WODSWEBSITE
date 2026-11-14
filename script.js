@@ -5,7 +5,8 @@ const playerMessage = document.getElementById("playerMessage");
 const menuButton = document.querySelector(".menu");
 const nav = document.querySelector(".navlinks");
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearElement = document.getElementById("year");
+if (yearElement) yearElement.textContent = new Date().getFullYear();
 
 menuButton.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
@@ -13,7 +14,3 @@ menuButton.addEventListener("click", () => {
 });
 nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
 
-playButton.addEventListener("click", () => {
-  window.open(STREAM_URL, "_blank", "noopener,noreferrer");
-  playerMessage.textContent = "Opening the live stream";
-});
